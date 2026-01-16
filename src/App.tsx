@@ -1,13 +1,17 @@
-
-import  gsap  from "gsap";
+import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import NavBar from "./sections/NavBar";
+import Hero from "./sections/Hero";
 
-gsap.registerPlugin(ScrollTrigger) 
+gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {
   return (
-    <div className="text-3xl font-bold underline text-blue-500">App</div>
-  )
-}
+    <main>
+      <NavBar />
+      <Hero />
+    </main>
+  );
+};
 
-export default App
+export default App;
